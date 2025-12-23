@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?:  Sort 1 ran slowly in the worst case, with runtime increasing quadratically as the input size grew. However, when the input was already sorted, its runtime was much faster, close to linear. This shows that it can stop early if no swaps are needed. This behavior matches Bubble Sort, which is O(n²) in the worst case but Ω(n) in the best case.
+
+sort2 uses: Merge sort
+
+How do you know?:   Sort 2 consistently performed much better as the input size increased. Its runtime grew like n log n instead of n², and it did not become much faster when the input was sorted, since it always divides and merges regardless of input order. This behavior matches Merge Sort, which is O(n log n) in the worst and Ω(n log n) in the best.
+
+sort3 uses: Selection sort
+
+How do you know?:   Sort 3 was quadratic in both the best and worst cases. It did not speed up even when the input was already sorted, and its performance matched O(n²) consistently. This behavior matches Selection Sort, which always looks through the unsorted portion to pick the next element, regardless of whether the data is sorted
